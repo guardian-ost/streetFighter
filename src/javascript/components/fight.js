@@ -6,14 +6,17 @@ export async function fight(firstFighter, secondFighter) {
     });
 }
 
-export function getDamage(attacker, defender) {
-    // return damage
-}
-
 export function getHitPower(fighter) {
-    // return hit power
+    const { attack } = fighter;
+    return attack * (Math.random() + 1);
 }
 
 export function getBlockPower(fighter) {
-    // return block power
+    const { defense } = fighter;
+    return defense * (Math.random() + 1);
+}
+
+export function getDamage(attacker, defender) {
+    const damage = getHitPower(attacker) - getBlockPower(defender);
+    return damage > 0 ? damage : 0;
 }

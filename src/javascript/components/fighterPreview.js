@@ -23,6 +23,8 @@ export function createFighterPreview(fighter, position) {
         className: `fighter-preview___root ${positionClassName}`
     });
 
+    if (!fighter) throw new Error('Select second fighter');
+
     const fighterImage = createFighterImage(fighter);
     const { name, health, attack, defense } = fighter;
 
