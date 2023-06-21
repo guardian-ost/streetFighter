@@ -13,8 +13,9 @@
         "arrow-body-style": 0,
         "no-console": ["error", { "allow": ["warn", "error"] }],
         "no-underscore-dangle": 0,
-        "no-useless-catch": 0
-    },
+        "no-useless-catch": 0,
+        "no-unused-vars": 0
+          },
     "ignorePatterns": ["node_modules", "dist"],
     "overrides": [
         {
