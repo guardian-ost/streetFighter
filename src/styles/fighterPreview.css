@@ -4,10 +4,16 @@
   flex-basis: 250px;
 }
 
+.fighter-preview__details{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 20px;
+}
 .fighter-preview___right {
-  align-items: flex-end;
+  align-items: center;
 }
 
 .fighter-preview___left {
-  align-items: flex-start;
+  align-items: center;
 }
